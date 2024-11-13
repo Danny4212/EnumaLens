@@ -67,6 +67,11 @@
             <video controls>
                 <source src="Sehatkah Jiwaku.mp4" target="video/mp4">
             </video>
+        </aside>
+    </br>
+<header> Mental Health Training</header> 
+<a href="https://satupersen.net/layanan/kelas/basic-mental-health-training" target ="_blank">Collab With SatuPersen</a>
+        <aside>
             <header></br>Formulir Saran</header>
             </br>
             <form target="">
@@ -130,6 +135,19 @@
             <a href="https://ayosehat.kemkes.go.id/pengertian-kesehatan-mental" target ="_blank">Halaman Kesehatan mental dari Kemenkes</a>
         </section>
     </div>  
+    <script> 
+    document.querySelector('form').addEventListener('submit', function (e) {
+        const name = document.querySelector('input[type="text"]').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const suggestion = document.querySelector('textarea').value.trim();
     
+        if (!name || !email || !suggestion) {
+            alert('Tolong Isi Formulir');
+            e.preventDefault();
+
+
+        }
+    });
+    </script>
 </body>
 </html>
